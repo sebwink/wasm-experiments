@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WASM Fibonacci demo!</title>
+	</head>
+	<body>
+		<div id="fn"></div>
+		<script src="fib.js"></script>
+		<!--script>
+			Module.onRuntimeInitialized = _ => {
+				const fib = Module.cwrap('fib',
+			  					               'number',
+			            					     ['number']);
+				document.getElementById("fn").innerHTML = fib(12);
+				// -> 233
+			}
+		</script-->
+		<script src="show_fib.js"></script>
+	</body>
+</html>
